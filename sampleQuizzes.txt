@@ -1,63 +1,123 @@
-Sample One Piece quiz:
-    Question:
+Sample One Piece Quiz:
+    Question1:
     What is the name of Luffy's pirate crew?
 
     Answer:
     The Straw Hats
 --------------------------------------------------
-    Question:
+    Question2:
     Who's the cook in the Straw Hats?
 
     Answer:
     Sanji
 --------------------------------------------------
-    Question:
+    Question3:
     Who gave Luffy his hat?
 
     Answer:
     Shanks
 --------------------------------------------------
-    Question:
+    Question4:
     What weapons does Zoro fight with?
 
     Answer:
     Three katana 
 --------------------------------------------------
-    Question:
+    Question5:
     What Village is Nami from?
     
     Answer:
     Cocoyasi
 --------------------------------------------------
-    Question:
+    Question6:
     Who was the king of the pirates, and what was his treasure?
 
     Answer:
     Gol D. Roger, and his treasure The One Piece
 --------------------------------------------------
-    Question:
+    Question7:
     What was the name of Ohm the priest from Skypiea's dog?
 
     Answer:
     Holy
 --------------------------------------------------
-    Question:
+    Question8:
     Who is the navigator of the Straw Hat crew?
 
     Answer:
     Nami
 --------------------------------------------------
-    Question:
+    Question9:
     How many War Lords of the Sea are there?
 
     Answer:
     7
 --------------------------------------------------
-    Question:
+    Question10:
     How long is the Straw Hat crew separated for while they train?
 
     Answer:
     Two years
 _________________________________________________________________________________
 
-Sample 
+Sample Dragonball Z Quiz
+
+    Question1:
+    How many episodes are in the Dragonball Z series?
+
+    Answer:
+    291 episodes
+--------------------------------------------------
+    Question2:
+    Who is the first to become a Super Saiyan
+
+    Answer:
+    Goku
+--------------------------------------------------
+    Question3:
+    What character becomes a Super Saiyan 2 first?
+
+    Answer:
+    Gohan
+--------------------------------------------------
+    Question4:
+    Who was the first antagonist introduced in Dragonball Z?
+
+    Answer:
+    Raditz
+--------------------------------------------------
+    Question5:
+    Who was the first character to be revived by the Dragon Balls?
+
+    Answer:
+    Master Roshi
+--------------------------------------------------
+    Question6:
+    Who has the most transformations in Dragonball Z?
+
+    Answer:
+    Frieza
+--------------------------------------------------
+    Question7:
+    What is the name of Goku's friends and allies?
+
+    Answer:
+    The Z-Fighters
+--------------------------------------------------
+    Question8:
+    What do the Z-Fighters eat to restore themselves?
+
+    Answer:
+    Senzu Bean
+--------------------------------------------------
+    Question9:
+    What device do Vegeta and Nappa use to see the power level of those around them?
+
+    Answer:
+    A Scouter
+--------------------------------------------------
+    Question10:
+    Who heals Krillen after he's impaled by Frieza?
+
+    Answer:
+    Dende 
