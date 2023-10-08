@@ -1,0 +1,63 @@
+Sample One Piece quiz:
+    Question:
+    What is the name of Luffy's pirate crew?
+
+    Answer:
+    The Straw Hats
+--------------------------------------------------
+    Question:
+    Who's the cook in the Straw Hats?
+
+    Answer:
+    Sanji
+--------------------------------------------------
+    Question:
+    Who gave Luffy his hat?
+
+    Answer:
+    Shanks
+--------------------------------------------------
+    Question:
+    What weapons does Zoro fight with?
+
+    Answer:
+    Three katana 
+--------------------------------------------------
+    Question:
+    What Village is Nami from?
+    
+    Answer:
+    Cocoyasi
+--------------------------------------------------
+    Question:
+    Who was the king of the pirates, and what was his treasure?
+
+    Answer:
+    Gol D. Roger, and his treasure The One Piece
+--------------------------------------------------
+    Question:
+    What was the name of Ohm the priest from Skypiea's dog?
+
+    Answer:
+    Holy
+--------------------------------------------------
+    Question:
+    Who is the navigator of the Straw Hat crew?
+
+    Answer:
+    Nami
+--------------------------------------------------
+    Question:
+    How many War Lords of the Sea are there?
+
+    Answer:
+    7
+--------------------------------------------------
+    Question:
+    How long is the Straw Hat crew separated for while they train?
+
+    Answer:
+    Two years
+_________________________________________________________________________________
+
+Sample 
