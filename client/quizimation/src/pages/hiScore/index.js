@@ -1,0 +1,1 @@
+// page code for the hiScore page
