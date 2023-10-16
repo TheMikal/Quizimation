@@ -21,7 +21,7 @@ function HiScore({ Scores }) {
                     return (
                         <div>
                             <ScoreBox 
-                                username
+                                userName
                                 userScore
                             />
                         </div>

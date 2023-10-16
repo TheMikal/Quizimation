@@ -16,21 +16,24 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Header />
+          <Header>
+            <div>
+              <Routes>
+                <Route
+                  path= "/"
+                  element={<Home />}
+                />
+                <Route 
+                  path= "/login"
+                  element= {<Login />} 
+                />
+              </Routes>
+            </div>
+          </Header>
           <div>
-            <Routes>
-              <Route
-                path= "/"
-                element={<Home />}
-              />
-              <Route 
-                path= "/login"
-                element= {<Login />} 
-              />
-            </Routes>
-          </div>
-          <div>
-            <Directory></Directory>
+            <Directory 
+              genres={["Action", "Comedy", "Drama", "Fantasy", "Romance", "Sci-Fi", "Slice of Life",]}
+            />
           </div>
         </div>
       </Router>
