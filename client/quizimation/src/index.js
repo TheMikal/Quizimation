@@ -5,13 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header';
 import { ChakraProvider } from '@chakra-ui/react'
+import Home from './pages/home';
+import QuizForm from './components/QuizForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
       <Header />
-      <App />
+      <QuizForm />
     </ChakraProvider>
   </React.StrictMode>
 );
