@@ -3,20 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Header';
 import { ChakraProvider } from '@chakra-ui/react'
-import Home from './pages/home';
-import QuizForm from './components/QuizForm';
-import QuizBody from './components/QuizBody.js';
-import Directory from './components/Directory';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      <Header />
-      <Directory genres={['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror', 'Romance', 'Sci-Fi', ]}/>
-      <Home/>
+      <App />
     </ChakraProvider>
   </React.StrictMode>
 );
