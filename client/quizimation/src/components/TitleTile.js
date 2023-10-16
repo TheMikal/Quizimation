@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardBody, CardFooter, Stack, Heading, Text } from '@chakra-ui/react'
 
-export default function TitleTile(quizTitle, genre, topScore) {
+function TitleTile(quizTitle, genre, topScore) {
     return (
         <Card direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>
             <Stack>
@@ -16,3 +16,20 @@ export default function TitleTile(quizTitle, genre, topScore) {
         </Card>
     )
 }
+
+function QuizList() {
+    return (
+        <div>
+            {/* quiz data */.map((quiz) => (
+                <TitleTile
+                    key={quiz.id}
+                    quizTitle={quiz.quizTitle}
+                    genre={quiz.genre}
+                    topScore={quiz.topScore}
+                />
+            ))}
+        </div>
+    );
+}
+
+export { TitleTile, QuizList }

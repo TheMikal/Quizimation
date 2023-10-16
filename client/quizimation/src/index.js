@@ -7,13 +7,16 @@ import Header from './components/Header';
 import { ChakraProvider } from '@chakra-ui/react'
 import Home from './pages/home';
 import QuizForm from './components/QuizForm';
+import QuizBody from './components/QuizBody.js';
+import Directory from './components/Directory';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
       <Header />
-      <QuizForm />
+      <Directory genres={['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy','Music', 'Romance', 'Sci-Fi', ]}/>
+      <Home/>
     </ChakraProvider>
   </React.StrictMode>
 );
