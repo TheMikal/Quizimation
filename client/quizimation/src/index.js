@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
     <ChakraProvider>
       <Header />
-      <Directory genres={['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy','Music', 'Romance', 'Sci-Fi', ]}/>
+      <Directory genres={['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror', 'Romance', 'Sci-Fi', ]}/>
       <Home/>
     </ChakraProvider>
   </React.StrictMode>
