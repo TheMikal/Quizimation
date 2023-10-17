@@ -10,9 +10,9 @@ const db = require('./config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 const apolloServer = new ApolloServer({
-  typeDefs,
-  resolvers,
-  context: authMiddleware
+    typeDefs,
+    resolvers,
+    context: authMiddleware
 });
 
 app.use(express.urlencoded({ extended: false }));
@@ -42,3 +42,5 @@ const startApolloServer = async () => {
         })
     })
     };
+
+    startApolloServer();

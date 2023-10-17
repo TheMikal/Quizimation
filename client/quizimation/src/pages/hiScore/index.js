@@ -14,7 +14,7 @@ function HiScore({ Scores }) {
 
 
     return(
-        <div>
+        <div className='container'>
             <section>Quiz Title</section>
             <section>
                 {Object.keys(hiScores).map((hiScore) => {
