@@ -20,14 +20,14 @@ function TitleTile(quizTitle, genre, topScore) {
 function QuizList() {
     return (
         <div>
-            {/* quiz data */.map((quiz) => (
+            {/* {Quizzes.map((quiz) => (
                 <TitleTile
                     key={quiz.id}
                     quizTitle={quiz.quizTitle}
                     genre={quiz.genre}
                     topScore={quiz.topScore}
                 />
-            ))}
+            ))} */}
         </div>
     );
 }

@@ -7,7 +7,6 @@ import Login from './pages/loginSignup';
 import TakeQuiz from './pages/takeQuiz';
 import MakeQuiz from './pages/makeQuiz';
 import Directory from './components/Directory';
-import HiScore from './pages/hiScore';
 import QuizByGenre from './pages/quizByGenre';
 
 const client = new ApolloClient({
@@ -53,7 +52,7 @@ function App() {
               genres={["Action", "Comedy", "Drama", "Fantasy", "Romance", "Sci-Fi", "Slice of Life",]}
             />
           </div>
-          <HiScore />
+          <div className='container'></div>
         </div>
       </Router>
     </ApolloProvider>
