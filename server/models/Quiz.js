@@ -25,6 +25,10 @@ const quizSchema = new Schema({
     answer: {
         type: String,
         required: true,
+    },
+    genre: {
+        type: String,
+        required: true,
     }
 },
 {

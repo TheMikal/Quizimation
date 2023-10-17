@@ -10,23 +10,23 @@ function HiScore({ Scores }) {
         )
     }
 
-    const [hiScores, setHiScores] = useState([]);
+    // const [hiScores, setHiScores] = useState([]);
 
 
     return(
-        <div>
+        <div className='container'>
             <section>Quiz Title</section>
             <section>
-                {Object.keys(hiScores).map((hiScore) => {
+                {/* {Object.keys(hiScores).map((hiScore) => {
                     return (
                         <div>
                             <ScoreBox 
-                                username
+                                userName
                                 userScore
                             />
                         </div>
                     )
-                })}
+                })} */}
             </section>
         </div>);
 }

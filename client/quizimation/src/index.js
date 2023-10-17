@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
+import Home from './pages/home';
+import QuizForm from './components/QuizForm'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

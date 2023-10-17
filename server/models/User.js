@@ -28,6 +28,7 @@ const userSchema = new Schema({
         required: true,
         trim: true,
     },
+    
 },
 {
     toJSON: {
