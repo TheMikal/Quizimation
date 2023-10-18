@@ -39,6 +39,15 @@ function TakeQuiz() {
                 op2={'Cell Jr.'}
                 op3={'pan'}
                 op4={'Ubuu'}
+           />
+
+            <QuizBody
+                mainText={'Who is a prince of an extraterrestrial warrior race known as the Saiyans?'}
+                op1={'Broly'}
+                op2={'Vegeta'}
+                op3={'Trunks'}
+                op4={'Oolong'}
+        
             />
         </section>
     )
