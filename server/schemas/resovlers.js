@@ -64,13 +64,50 @@ const resolvers = {
             // some stuff
         },
 
-        addUser: {
-            // some stuff
-        },
+        addUser: async (parent, { username, email, password }) => {
+            const user = await User.create({ username, email, password });
+            const token = signToken(user);
+            return { token, user };
+          },
+          login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
+      
+            if (!user) {
+              throw new AuthenticationError('No user found with this email address');
+            }
+      
+            const correctPw = await user.isCorrectPassword(password);
+      
+            if (!correctPw) {
+              throw new AuthenticationError('Incorrect credentials');
+            }
+      
+            const token = signToken(user);
+      
+            return { token, user };
+          },
+            
+        
 
-        deleteUser: {
-            // some stuff
-        },
+          deleteUser: async (parent, args, context) => {
+            if (!context.user) {
+              throw new AuthenticationError('You must be logged in to delete a user');
+            }
+      
+            try {
+              // Check if the user with the provided ID exists
+              const user = await User.findByIdAndDelete(context.user.id);
+      
+              if (!user) {
+                throw new Error('User not found');
+              }
+      
+              return 'User deleted successfully';
+            } catch (error) {
+              throw new Error(`Error deleting user: ${error.message}`);
+            }
+          },
+        
 
         uploadScore: {
             // some stuff
