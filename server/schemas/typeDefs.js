@@ -37,6 +37,7 @@ const typeDefs = gql`
         # mutations code here
         login(username: String!, password: String!): Auth
         addUser(username: String!, firstName: String!, lastName: String!, email: String!, password: String!): User
+        createQuiz(input: QuizInput!): Quiz
     }
 `;
 
