@@ -3,7 +3,7 @@ import React from 'react';
 import QuizList from '../../components/QuizList.js';
 
 function Home() {
-    return(
+    return (
         <div className='container'>
             <div id='backgroundColor'>
                 <h2>Available Quizzes:</h2>

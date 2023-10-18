@@ -60,10 +60,6 @@ const resolvers = {
             // some stuff
         },
 
-        uploadQuiz: {
-            // some stuff
-        },
-
         deleteQuiz: {
             // some stuff
         },
