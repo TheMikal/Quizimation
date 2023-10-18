@@ -10,7 +10,19 @@ const typeDefs = gql`
         email: String
         password: String
         profilePic: String
-        capsules: [Capsule]
+        quizzes: [Quiz]
+    }
+
+    type Option {
+        _id: ID
+        text: String
+    }
+
+    type Score {
+        _id: ID
+        user: User
+        quiz: Quiz
+        score: Int
     }
 
     type Quiz {
@@ -37,6 +49,8 @@ const typeDefs = gql`
         # mutations code here
         login(username: String!, password: String!): Auth
         addUser(username: String!, firstName: String!, lastName: String!, email: String!, password: String!): User
+        addQuiz(mainText: String!, options: [String]!, answer: String!): Quiz
+        addScore(quizId: ID!, score: Int!): Score
     }
 `;
 

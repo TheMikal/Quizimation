@@ -9,6 +9,9 @@ require("dotenv").config();
 const resolvers = {
     Query: {
         // some code
+        user: async () => {
+            return User.find().pop
+        }
         // quiz by id
         getQuiz: async (parent, {_id}) => {
             return await Quiz.findOne({ _id });
@@ -56,20 +59,66 @@ const resolvers = {
             return { token, user };
         },
 
-        createQuiz: {
-            // some stuff
+        createQuiz: async (parent, {mainText, options, answer}, context) => {
+            // Verify that the user is authenticated using context.user
+            if (!context.user) {
+                throw new AuthenticationError("Authentication error");
+            }
+            try {
+                const newQuiz = await Quiz.create({
+                    mainText: mainText,
+                    options: options,
+                    answer: answer,
+                    creator: context.user._id,
+                });
+
+                return newQuiz;
+            } catch (err) {
+                // Handle any errors that occur during quiz creation
+                throw new Error("Error creating the quiz");
+            }
         },
 
         deleteQuiz: {
             // some stuff
         },
 
-        addUser: {
-            // some stuff
+        addUser: async (parent, {username, firstName, lastName, email, password }) => {
+            try {
+                const hashedPassword = await bcrypt.hash(password, 10);
+                const newUser = await User.create({
+                    username: username,
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    password: hashedPassword,
+                });
+
+                return newUser;
+            } catch (err) {
+                // Handle any errors that occur during user creation
+                throw new Error("Error creating the user");
+            }
         },
 
-        deleteUser: {
-            // some stuff
+        deleteUser: async (parent, args, context) => {
+            if (!context.user) {
+                throw new AuthenticationError('You must be logged in to delete a user');
+            }
+
+            try {
+                // Check if the user with the provided ID exists
+                const user = await User.findByIdAndDelete(context.user.id);
+
+                if (!user) {
+                throw new Error('User not found');
+                }
+
+                return 'User deleted successfully';
+            } catch (error) {
+
+                throw new Error(`Error deleting user: ${error.message}`);
+            }
         },
 
         uploadScore: {

@@ -1,5 +1,5 @@
 const db = require("../config/connection");
-const {  } = require("../models");
+const { HiScore, Quiz, User } = require("../models");
 
 const userSeed = require("./UserSeeds.json");
 const quizSeed = require("./QuizSeeds.json");
