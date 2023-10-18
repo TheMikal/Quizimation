@@ -1,6 +1,6 @@
 // page code for the home page
 import React from 'react';
-import TitleTile from '../../components/TitleTile.js';
+import QuizList from '../../components/QuizList.js';
 
 function Home() {
     return(
@@ -8,11 +8,7 @@ function Home() {
             <div id='backgroundColor'>
                 <h2>Available Quizzes:</h2>
                 <section>
-                    <TitleTile 
-                        quizTitle= {"Test"}
-                        genre={"Horror"}
-                        topScore={"100"}
-                    />
+                    <QuizList />
                     {/* map the titleTile component over available quizzes */}
                 </section>
             </div>
