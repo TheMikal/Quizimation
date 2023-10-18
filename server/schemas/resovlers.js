@@ -56,9 +56,23 @@ const resolvers = {
             return { token, user };
         },
 
-        createQuiz: {
-            // some stuff
-        },
+        createQuiz: async (parent, { input }, context) => {
+            if (!context.user) {
+              throw new AuthenticationError('You must be logged in to create a quiz');
+            }
+      
+            try {
+              const { title, questions } = input;
+      
+              // Create a new quiz
+              const quiz = await Quiz.create({ title, questions });
+      
+              return quiz;
+            } catch (error) {
+              throw new Error(`Error creating quiz: ${error.message}`);
+            }
+          },
+        
 
         deleteQuiz: {
             // some stuff
