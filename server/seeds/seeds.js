@@ -3,24 +3,25 @@ const { HiScore, Quiz, User } = require("../models");
 
 const userSeed = require("./UserSeeds.json");
 const quizSeed = require("./QuizSeeds.json");
+const scoreSeed = require("./ScoreSeeds.json")
 
 db.once("open", async () => {
     
     await User.deleteMany({});
-    await Capsule.deleteMany({});
+    await Quiz.deleteMany({});
 
     const user = await User.create(userSeed);
     console.log(user);
-    const cap = await Quiz.create(quizSeed);
-    console.log(cap);
+    const quiz = await Quiz.create(quizSeed);
+    console.log(quiz);
+    const score = await HiScore.create(scoreSeed);
     
-    user.capsules.push(cap);
-    console.log(user);
+    console.log(score);
 
     // update user with associated quiz by owner and username
     await User.findOneAndUpdate(
         { owner: User.username },
-        { $addToSet: { capsules: cap._id } }
+        { $addToSet: { quizzes: quiz._id } }
     );
 
     console.log("all done!");

@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const scoreSchema = new Schema({
     userScore: {
-        type: Integer,
+        type: Number,
         required: true,
     },
     userName: {
@@ -10,7 +10,7 @@ const scoreSchema = new Schema({
         required: true,
     },
     quizID: {
-        type: Integer,
+        type: Number,
         required: true,
     }
 },

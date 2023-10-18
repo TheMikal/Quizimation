@@ -1,7 +1,6 @@
 const { User, Quiz, HiScore } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
-const multer = require('multer');
-const { authMiddleware } = require("../utils")
+const { authMiddleware } = require("../utils/auth")
 const { ObjectId } = require("mongodb");
 const bcrypt = require("bcryptjs");
 require("dotenv").config();
@@ -10,8 +9,8 @@ const resolvers = {
     Query: {
         // some code
         user: async () => {
-            return User.find().pop
-        }
+            return User.find()
+        },
         // quiz by id
         getQuiz: async (parent, {_id}) => {
             return await Quiz.findOne({ _id });
@@ -101,25 +100,25 @@ const resolvers = {
             }
         },
 
-        deleteUser: async (parent, args, context) => {
-            if (!context.user) {
-                throw new AuthenticationError('You must be logged in to delete a user');
-            }
+        // deleteUser: async (parent, args, context) => {
+        //     if (!context.user) {
+        //         throw new AuthenticationError('You must be logged in to delete a user');
+        //     }
 
-            try {
-                // Check if the user with the provided ID exists
-                const user = await User.findByIdAndDelete(context.user.id);
+        //     try {
+        //         // Check if the user with the provided ID exists
+        //         const user = await User.findByIdAndDelete(context.user.id);
 
-                if (!user) {
-                throw new Error('User not found');
-                }
+        //         if (!user) {
+        //         throw new Error('User not found');
+        //         }
 
-                return 'User deleted successfully';
-            } catch (error) {
+        //         return 'User deleted successfully';
+        //     } catch (error) {
 
-                throw new Error(`Error deleting user: ${error.message}`);
-            }
-        },
+        //         throw new Error(`Error deleting user: ${error.message}`);
+        //     }
+        // },
 
         uploadScore: {
             // some stuff

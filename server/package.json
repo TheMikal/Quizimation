@@ -23,6 +23,7 @@
     "graphql-http": "^1.22.0",
     "graphql-upload": "^16.0.2",
     "http": "^0.0.1-security",
+    "http-server": "^14.1.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.2"
   },

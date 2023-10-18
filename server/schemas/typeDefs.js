@@ -27,6 +27,7 @@ const typeDefs = gql`
 
     type Quiz {
         _id: ID
+        title: String
         mainText: String
         options: [Option]
         answer: String
@@ -39,9 +40,11 @@ const typeDefs = gql`
     }
 
     type Query {
-        me: User
+        users: [User]
+        user(username: String!): User
         getQuiz: [Quiz]
-        getScore: [Score]
+        getAvailableQuizzes(quizId: ID!): Quiz
+        getHiScore: [Score]
         getUser: [User]
     }
 
@@ -49,8 +52,9 @@ const typeDefs = gql`
         # mutations code here
         login(username: String!, password: String!): Auth
         addUser(username: String!, firstName: String!, lastName: String!, email: String!, password: String!): User
-        addQuiz(mainText: String!, options: [String]!, answer: String!): Quiz
-        addScore(quizId: ID!, score: Int!): Score
+        createQuiz(mainText: String!, options: [String]!, answer: String!): Quiz
+        deleteQuiz(quizId: ID!): String
+        uploadScore(quizId: ID!, score: Int!): Score
     }
 `;
 

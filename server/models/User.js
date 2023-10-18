@@ -27,7 +27,12 @@ const userSchema = new Schema({
         required: true,
         trim: true,
     },
-    
+    quizzes: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Quiz",
+        }
+    ],
 },
 {
     toJSON: {
@@ -35,6 +40,14 @@ const userSchema = new Schema({
     },
 }
 );
+
+// fetch quizzes made by user
+
+userSchema.virtual('createdQuizzes', {
+    ref: 'Quiz',
+    localField: '_id',
+    foreignField: 'creator',
+});
 
 const User = model("User", userSchema);
 
