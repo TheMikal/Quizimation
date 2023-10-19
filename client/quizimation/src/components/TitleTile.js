@@ -1,12 +1,12 @@
 import React from 'react';
-import { Card, CardBody, CardFooter, Stack, Heading, Text } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, Stack, Heading, Text, Link } from '@chakra-ui/react'
 
 function TitleTile({quizTitle, genre, topScore}) {
     return (
         <Card direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>
             <Stack>
                 <CardBody>
-                    <Heading fontSize='4xl'>{quizTitle}</Heading>
+                    <Link to={quizTitle.id} fontSize='4xl'>{quizTitle}</Link>
                     <Text fontSize='md'> Genre: {genre} </Text>
                 </CardBody>
                 <CardFooter>
