@@ -1,5 +1,6 @@
 import React from "react";
 import TitleTile from "./TitleTile";
+import '../App.css'
 
 function QuizList() {
     let Quizzes = [
@@ -30,7 +31,7 @@ function QuizList() {
     ];
 
     return (
-        <div>
+        <div className="container">
             {Quizzes.map((quiz) => (
                 <TitleTile
                     key={quiz.id}

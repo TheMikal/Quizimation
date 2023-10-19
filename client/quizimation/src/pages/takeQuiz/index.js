@@ -1,6 +1,5 @@
-// code for the page of taking the quiz
-import React from 'react';
-import QuizBody from './QuizBody';  // Adjust the path if needed
+import React from "react";
+import QuizBody from "../../components/QuizBody"
 
 function TakeQuiz() {
     return (

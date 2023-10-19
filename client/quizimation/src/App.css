@@ -5,6 +5,7 @@
 
 #root {
   height: 100vh;
+  background-color: #ad70fd49;
 }
 
 .App-logo {
@@ -47,12 +48,12 @@
   left: 0;
   top: 50px;
   height: 100%; /* Set the height to fill the entire screen */
-  width: 190px; /* Adjust the width as needed */
+  width: 190px;
   background-color: #33333333; /* Background color of the sidebar */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Adjust the padding as needed */
+  padding: 20px;
 }
 
 .header {
@@ -64,15 +65,14 @@
 }
 
 .container {
-  background-image: url(../public/girlPointingLeft.jpg);
+  /* background-image: url(../public/girlPointingLeft.jpg); */
   /* image from "https://www.istockphoto.com/vector/a-cute-young-girl-points-to-the-left-gm1326555400-411224399?phrase=anime+characters&searchscope=image%2Cfilm"  */
-  background-size: auto;
+  background-size: 400px 400px;
   background-repeat: no-repeat;
   position: absolute;
   margin-left: 190px;
-  width: 100vh;
+  width: 150vh;
   height: fit-content;
-  
 }
 #backgroundColor {
   background-color: #a084eb34;
