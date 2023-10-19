@@ -58,6 +58,5 @@ function HiScore() {
             </table>
         </div>
     );
-}
 
 export default HiScore;
