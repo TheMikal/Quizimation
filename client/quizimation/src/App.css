@@ -73,7 +73,14 @@
   margin-left: 190px;
   width: 150vh;
   height: fit-content;
+  font-weight: bold;
 }
 #backgroundColor {
   background-color: #a084eb34;
+}
+
+.question {
+  border: #f57fcece groove 5px;
+  padding: 10px;
+  font-weight: bolder;
 }

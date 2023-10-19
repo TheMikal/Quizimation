@@ -37,7 +37,7 @@ function App() {
                 />
                 {/* route for quiz by id */}
                 <Route 
-                  path= "/quiz/:quizId"
+                  path= "/quiz"
                   element= {<TakeQuiz />}
                 />
                 {/* route for making a quiz */}

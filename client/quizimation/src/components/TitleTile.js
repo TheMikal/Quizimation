@@ -1,12 +1,13 @@
 import React from 'react';
-import { Card, CardBody, CardFooter, Stack, Text, Link } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, Stack, Text } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 function TitleTile({quizTitle, genre, topScore}) {
     return (
         <Card direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>
             <Stack>
                 <CardBody>
-                    <Link to={quizTitle.id} fontSize='4xl'>{quizTitle}</Link>
+                    <Link to="/quiz" fontSize='4xl'><h1>{quizTitle}</h1></Link>
                     <Text fontSize='md'> Genre: {genre} </Text>
                 </CardBody>
                 <CardFooter>

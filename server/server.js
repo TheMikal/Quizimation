@@ -30,7 +30,11 @@ if (process.env.NODE_ENV === 'production') {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
-console.log(`dir name is: ${__dirname}`);
+
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 const startApolloServer = async () => {
     await apolloServer.start();
