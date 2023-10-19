@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardFooter, Stack, Heading, Text, Link } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, Stack, Text, Link } from '@chakra-ui/react'
 
 function TitleTile({quizTitle, genre, topScore}) {
     return (
