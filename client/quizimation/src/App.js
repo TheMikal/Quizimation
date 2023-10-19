@@ -3,7 +3,8 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/home';
-import Login from './pages/loginSignup';
+import Login from './pages/loginSignup/Login';
+import SignUp from './pages/loginSignup/Signup';
 import TakeQuiz from './pages/takeQuiz';
 import MakeQuiz from './pages/makeQuiz';
 import Directory from './components/Directory';
@@ -29,6 +30,10 @@ function App() {
                 <Route 
                   path= "/login"
                   element= {<Login />} 
+                />
+                <Route 
+                  path= "/signup"
+                  element= {<SignUp />}
                 />
                 {/* route for quiz by id */}
                 <Route 
