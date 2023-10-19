@@ -4,7 +4,7 @@
 
 A brief description of what this project does and who it's for
 
-##Description
+## Description
 
 As a user, I want to be able to take a quiz to test my knowledge of anime, so that I can see how much I know about the subject and compare my scores with other users.
 Acceptance criteria:
@@ -19,8 +19,8 @@ As a user, I want to be able to create my own anime quizzes and share them with 
 As a user, I want to be able to challenge other users to quizzes.
 As a user, I want to be able to earn badges and rewards for completing quizzes and achieving high scores
 
-##Issues
+## Issues
 We had issues with 
 
-#Technologies 
+# Technologies 
 HTML, CSS, Java Script, Chakra UI, React-App-Rewire, Node.js, Express.js, Mongo, Mongoose ODM, Graph QL,  
