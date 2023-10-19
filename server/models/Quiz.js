@@ -10,6 +10,7 @@ const quizSchema = new Schema({
         type: String,
         required: true,
         unique: true,
+        
     },
     optionOne: {
         type: String,
