@@ -4,7 +4,6 @@ const bodyParser = require('body-parser')
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 const { authMiddleware } = require('./utils/auth');
-const httpServer = require('http-server')
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
@@ -31,7 +30,7 @@ if (process.env.NODE_ENV === 'production') {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
-
+console.log(`dir name is: ${__dirname}`);
 
 const startApolloServer = async () => {
     await apolloServer.start();
