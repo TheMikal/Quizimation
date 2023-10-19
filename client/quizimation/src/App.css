@@ -73,7 +73,11 @@
   margin-left: 190px;
   width: 150vh;
   height: fit-content;
-  font-weight: bold;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 #backgroundColor {
   background-color: #a084eb34;
@@ -82,5 +86,20 @@
 .question {
   border: #f57fcece groove 5px;
   padding: 10px;
-  font-weight: bolder;
+  font-weight: bold;
+}
+
+Link:hover {
+  text-decoration: underline;
+};
+
+.titleTile {
+  background: #282c34;
+}
+
+.container * {
+  background: #a989f38a;
+  width: fit-content;
+  text-decoration: underline;
+  
 }

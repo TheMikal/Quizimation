@@ -9,6 +9,8 @@ import TakeQuiz from './pages/takeQuiz';
 import MakeQuiz from './pages/makeQuiz';
 import Directory from './components/Directory';
 import QuizByGenre from './pages/quizByGenre';
+import './App.css';
+import HiScore from './pages/hiScore';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -34,6 +36,10 @@ function App() {
                 <Route 
                   path= "/signup"
                   element= {<SignUp />}
+                />
+                <Route 
+                path='/hiscore'
+                element= {<HiScore />}
                 />
                 {/* route for quiz by id */}
                 <Route 

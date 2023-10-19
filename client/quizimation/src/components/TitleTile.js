@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardBody, CardFooter, Stack, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 function TitleTile({quizTitle, genre, topScore}) {
     return (
