@@ -20,7 +20,7 @@ As a user, I want to be able to challenge other users to quizzes.
 As a user, I want to be able to earn badges and rewards for completing quizzes and achieving high scores
 
 ## Issues
-We had issues with 
+We had issues with the
 
 # Technologies 
 HTML, CSS, Java Script, Chakra UI, React-App-Rewire, Node.js, Express.js, Mongo, Mongoose ODM, Graph QL,  
