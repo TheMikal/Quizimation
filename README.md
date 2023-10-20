@@ -25,6 +25,12 @@ We had issues with the
 HTML, CSS, Java Script, Chakra UI, React-App-Rewire, Node.js, Express.js, Mongo, Mongoose ODM, Graph QL, 
 
 ## Collaborators 
-Michael Taraschi - 
-Kyle Espera - 
-Vasu - 
+Michael Taraschi - https://github.com/TheMikal
+Kyle Espera - https://github.com/kyleespera
+Vasu - https://github.com/VASUK-09
+
+## Repository link 
+https://github.com/TheMikal/Quizimation
+
+## Deployed link 
+https://quizimation-a0b8d329a9d3.herokuapp.com
