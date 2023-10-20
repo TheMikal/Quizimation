@@ -1,26 +1,38 @@
 # Quizimation
-
-# Project Title
-
 A brief description of what this project does and who it's for
 
-##Description
+## User story 
 
-As a user, I want to be able to take a quiz to test my knowledge of anime, so that I can see how much I know about the subject and compare my scores with other users.
-Acceptance criteria:
-The quiz should be hosted on a website that is built using the MERN stack (MongoDB, Express.js, React, and Node.js).
-The quiz should have a variety of questions about different genres of anime, including but not limited to action, adventure, comedy, drama, fantasy, horror, romance, and science fiction.
-The quiz should have a timer, and users should be scored based on how many questions they answer correctly and how quickly they answer them.
-At the end of the quiz, users should be able to see their score and compare it to the scores of other users.
-Here are some additional user stories that you may want to consider:
-As a user, I want to be able to skip questions that I don't know the answer to.
-As a user, I want to be able to review my answers at the end of the quiz.
-As a user, I want to be able to create my own anime quizzes and share them with other users.
-As a user, I want to be able to challenge other users to quizzes.
-As a user, I want to be able to earn badges and rewards for completing quizzes and achieving high scores
+As a passionate anime fan, I want to use the Quizimation app to test and expand my knowledge of anime, characters, and storylines.
 
-##Issues
-We had issues with 
+## Acceptance Criteria
 
-#Technologies 
-HTML, CSS, Java Script, Chakra UI, React-App-Rewire, Node.js, Express.js, Mongo, Mongoose ODM, Graph QL,  
+As a user, I can log in to my Quizimation account with my username and password.
+Once logged in, I can see a user-friendly dashboard with options to browse available anime quizzes.
+I can search for specific anime titles or topics to find quizzes related to my interests.
+When I select a quiz, I can view a set of multiple-choice questions related to the chosen anime.
+For each question, I can select my answer and move on to the next question.
+As I answer questions, I receive immediate feedback on my choices, indicating if I was correct or not.
+After completing the quiz, I see my final score and any explanations for incorrect answers.
+I can review my quiz history, including my past quiz scores and topics I've explored.
+The app keeps a record of my progress and suggests new quizzes based on my preferences.
+I have the option to share my quiz scores and achievements with friends or on social media.
+
+## Issues
+We had issues with the
+
+## Technologies 
+HTML, CSS, Java Script, Chakra UI, React-App-Rewire, Node.js, Express.js, Mongo, Mongoose ODM, Graph QL, 
+
+## Collaborators 
+Michael Taraschi - https://github.com/TheMikal
+Kyle Espera - https://github.com/kyleespera
+Vasu - https://github.com/VASUK-09
+
+## Repository link 
+https://github.com/TheMikal/Quizimation
+
+## Deployed link 
+https://quizimation-a0b8d329a9d3.herokuapp.com
+
+![Quizimation](https://github.com/TheMikal/Quizimation/assets/131578548/4ab001ad-7eb9-4548-a521-92ddf18b7ffe)

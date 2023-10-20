@@ -8,25 +8,25 @@ function QuizList() {
             id: 1,
             quizTitle: "DragonBall Z",
             genre: "Adventure",
-            topScore: 100
+            topScore: 6
         },
         {
             id: 2,
             quizTitle: "Sailor Moon",
             genre: "Adventure",
-            topScore: 140
+            topScore: 10
         },
         {
             id: 3,
             quizTitle: "Hamtaro",
             genre: "Comedy",
-            topScore: 17
+            topScore: 5
         },
         {
             id: 4,
             quizTitle: "Zatch Bell",
             genre: "Adventure",
-            topScore: 2
+            topScore: 5
         },
     ];
 
