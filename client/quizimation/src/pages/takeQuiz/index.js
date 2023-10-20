@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function TakeQuiz() {
     const [count, setCount] = useState(1);
     const navigate = useNavigate();
+    const [backgroundColor, setBackgroundColor] = useState('#a989f38a');
 
     // Function to update the count
     const updateCount = () => {
@@ -18,7 +19,7 @@ function TakeQuiz() {
 
     return (
         <section className="container">
-            <div className="question">
+            <div className="question" style={{ backgroundColor : backgroundColor }}>
                 <QuizBody
                     mainText={"How many dragon balls are there?"}
                     op1={'Two'}
