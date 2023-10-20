@@ -1,12 +1,14 @@
 import React from 'react';
-import { Card, CardBody, CardFooter, Stack, Heading, Text } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, Stack, Text } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+import '../App.css';
 
-function TitleTile(quizTitle, genre, topScore) {
+function TitleTile({quizTitle, genre, topScore}) {
     return (
         <Card direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>
             <Stack>
                 <CardBody>
-                    <Heading fontSize='4xl'>{quizTitle}</Heading>
+                    <Link to="/quiz" fontSize='4xl'><h1>{quizTitle}</h1></Link>
                     <Text fontSize='md'> Genre: {genre} </Text>
                 </CardBody>
                 <CardFooter>
@@ -17,19 +19,21 @@ function TitleTile(quizTitle, genre, topScore) {
     )
 }
 
-function QuizList() {
-    return (
-        <div>
-            {/* quiz data */.map((quiz) => (
-                <TitleTile
-                    key={quiz.id}
-                    quizTitle={quiz.quizTitle}
-                    genre={quiz.genre}
-                    topScore={quiz.topScore}
-                />
-            ))}
-        </div>
-    );
-}
+// function QuizList() {
+//     let Quizzes= []
 
-export { TitleTile, QuizList }
+//     return (
+//         <div>
+//             {Quizzes.map((quiz) => (
+//                 <TitleTile
+//                     key={quiz.id}
+//                     quizTitle={quiz.quizTitle}
+//                     genre={quiz.genre}
+//                     topScore={quiz.topScore}
+//                 />
+//             ))}
+//         </div>
+//     );
+// }
+
+export default TitleTile;

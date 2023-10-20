@@ -1,0 +1,36 @@
+{
+    "name": "quizimation",
+    "version": "1.0.0",
+    "description": "",
+    "engines": {
+        "node": "14.x",
+        "npm": "6.x"
+    },
+    "main": "server/server.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "seed": "cd server && npm run seed",
+        "build": "cd client && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "assert": "^2.1.0",
+        "buffer": "^6.0.3",
+        "concurrently": "^5.1.0",
+        "crypto-browserify": "^3.12.0",
+        "https-browserify": "^1.0.0",
+        "os-browserify": "^0.3.0",
+        "process": "^0.11.10",
+        "react-app-rewired": "^2.2.1",
+        "stream-browserify": "^3.0.0",
+        "stream-http": "^3.2.0",
+        "url": "^0.11.3"
+    },
+    "dependencies": {
+        "jsonwebtoken": "^9.0.2"
+    }
+}

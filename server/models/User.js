@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-const bcrypt = require("bcryptjs");
+const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
     username: {
@@ -28,6 +28,12 @@ const userSchema = new Schema({
         required: true,
         trim: true,
     },
+    quizzes: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Quiz",
+        }
+    ],
 },
 {
     toJSON: {
@@ -35,6 +41,27 @@ const userSchema = new Schema({
     },
 }
 );
+
+// fetch quizzes made by user
+
+userSchema.virtual('createdQuizzes', {
+    ref: 'Quiz',
+    localField: '_id',
+    foreignField: 'creator',
+});
+
+userSchema.pre('save', async function (next) {
+    if (this.isNew || this.isModified('password')) {
+        const saltRounds = 10;
+        this.password = await bcrypt.hash(this.password, saltRounds);
+    }
+
+    next();
+});
+
+userSchema.methods.isCorrectPassword = async function (password) {
+    return bcrypt.compare(password, this.password);
+};
 
 const User = model("User", userSchema);
 

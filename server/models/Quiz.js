@@ -1,10 +1,16 @@
 const { Schema, model } = require("mongoose");
 
 const quizSchema = new Schema({
+    title: {
+        type: String,
+        required: true,
+        unique: true
+    },
     mainText: {
         type: String,
         required: true,
         unique: true,
+        
     },
     optionOne: {
         type: String,
@@ -23,6 +29,10 @@ const quizSchema = new Schema({
         required: true,
     },
     answer: {
+        type: String,
+        required: true,
+    },
+    genre: {
         type: String,
         required: true,
     }
