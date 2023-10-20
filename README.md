@@ -1,4 +1,3 @@
-![Quizimation](https://github.com/TheMikal/Quizimation/assets/131578548/4ab001ad-7eb9-4548-a521-92ddf18b7ffe)
 # Quizimation
 A brief description of what this project does and who it's for
 
@@ -36,4 +35,4 @@ https://github.com/TheMikal/Quizimation
 ## Deployed link 
 https://quizimation-a0b8d329a9d3.herokuapp.com
 
-![App Screenshot](![Quizimation](https://github.com/TheMikal/Quizimation/blob/main/assets/Quizimation.png))
+![Quizimation](https://github.com/TheMikal/Quizimation/assets/131578548/4ab001ad-7eb9-4548-a521-92ddf18b7ffe)
