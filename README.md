@@ -34,3 +34,5 @@ https://github.com/TheMikal/Quizimation
 
 ## Deployed link 
 https://quizimation-a0b8d329a9d3.herokuapp.com
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
